@@ -1,0 +1,199 @@
+/* General Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header & Logo Section */
+.main-header {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fefefe;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #2563eb;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 12px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid white;
+}
+
+/* Banner Image */
+.banner img {
+  width: 100%;
+  max-height: 100vh; /* fits within the screen height */
+  object-fit: contain; /* scales image to fit without cropping */
+  border-bottom: 4px solid #2563eb;
+  display: block;
+}
+
+
+/* Form Section */
+main {
+  padding: 30px 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.form-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+}
+
+form input, form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.donate-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f2f2f2;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Donation Cards (if reused later) */
+.donation-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  box-sizing: border-box;
+}
+
+.donation-card:hover {
+  transform: scale(1.02);
+}
+.donation-card.expired {
+  opacity: 0.6;
+  background-color: #ffe6e6;
+  border-left: 4px solid red;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .main-header {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .tagline {
+    font-size: 1em;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .form-card {
+    padding: 15px;
+  }
+
+  form input,
+  form label,
+  .donate-btn {
+    font-size: 14px;
+  }
+}
+

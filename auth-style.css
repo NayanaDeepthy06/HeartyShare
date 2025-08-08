@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: url('../images/food-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .auth-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2563eb;
+  }
+  
+  .divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #777;
+  }
+  
+  .google-btn {
+    background-color: #db4437;
+  }
+  
+  .toggle-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .toggle-text a {
+    color: #3b82f6;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .error-msg {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+  }
+  @media (max-width: 400px) {
+    .auth-container {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  
+  
+  

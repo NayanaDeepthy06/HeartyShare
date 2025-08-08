@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Food - HeartyShare</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-content">
+      <img src="images/logo.png" alt="HeartyShare Logo" class="logo">
+      <div class="tagline">Share a Meal, Spread the Love ❤️</div>
+    </div>
+  </header>
+
+  <!-- Nav -->
+  <nav style="background-color: #4CAF50; padding: 10px;">
+    <a href="index.html" style="color: white; margin-right: 15px; text-decoration: none;">Home</a>
+    <a href="donate.html" style="color: white; margin-right: 15px; text-decoration: none;">Donate Food</a>
+    <a href="view-donations.html" style="color: white; margin-right: 15px; text-decoration: none;">View Donations</a>
+    <a href="auth.html" style="color: white; text-decoration: none;">Login / Signup</a>
+  </nav>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img src="images/food-donation-banner.jpg" alt="Donate Food Banner">
+  </section>
+
+  <!-- Donation Form -->
+  <main>
+    <h2>Donate Surplus Food</h2>
+    <div class="form-card">
+      <form id="donationForm">
+        <input type="text" id="foodType" placeholder="🍲 Food Type" required>
+        <input type="text" id="quantity" placeholder="📦 Quantity" required>
+        <input type="text" id="location" placeholder="📍 Pickup Location" required>
+        <input type="text" id="contact" placeholder="📞 Contact Number" required>
+        <label for="expiryTime">🕒 Expiry Date & Time:</label>
+        <input type="datetime-local" id="expiryTime" name="expiryTime" required>
+        <label for="pickupTime">🕓 Pickup Time:</label>
+        <input type="datetime-local" id="pickupTime" name="pickupTime" required>
+        <button type="submit" class="donate-btn">Donate Now</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HeartyShare. All rights reserved.</p>
+  </footer>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+  <!-- Load config first -->
+  <script src="js/firebase-config.js"></script>
+
+  <!-- Then logic scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/submit-donation.js"></script>
+</body>
+</html>
+
+

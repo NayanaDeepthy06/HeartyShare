@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Donations - HeartyShare</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav style="background-color: #4CAF50; padding: 10px;">
+    <a href="index.html" style="color: white; margin-right: 15px; text-decoration: none;">Home</a>
+    <a href="donate.html" style="color: white; margin-right: 15px; text-decoration: none;">Donate Food</a>
+    <a href="view-donations.html" style="color: white; text-decoration: none;">View Donations</a>
+    <a href="auth.html" style="color: white; text-decoration: none;">Login / Signup</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>HeartyShare - Food Donations</h1>
+    <a href="index.html" class="back-button">← Back to Home</a>
+  </header>
+
+  <!-- Refresh Button -->
+  <div style="text-align: center; margin-top: 20px;">
+    <button id="refreshDonations" style="padding: 8px 16px; font-size: 16px;">
+      🔄 Refresh Donations
+    </button>
+  </div>
+
+  <!-- Donations Section -->
+  <main>
+    <h2>Available Food Donations</h2>
+    <div id="donationsList" class="donation-container">
+      <!-- Donation cards will appear here -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 10px; background-color: #f2f2f2; margin-top: 20px;">
+    <p>&copy; 2025 HeartyShare. All rights reserved.</p>
+  </footer>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <!-- Firebase Config -->
+  <script src="js/firebase-config.js"></script>
+  <script src="js/auth.js"></script>
+
+  <!-- Donation Logic -->
+  <script src="js/view-donations.js"></script>
+</body>
+</html>
+

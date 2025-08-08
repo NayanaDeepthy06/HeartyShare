@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HeartyShare - Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Background Image and Overlay */
+    .background {
+      background: url('images/background.png') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      padding: 50px;
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    nav {
+      background-color: rgba(76, 175, 80, 0.9);
+      padding: 10px;
+      position: relative;
+      z-index: 3;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 12px 24px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+      font-size: 14px;
+      text-shadow: 1px 1px 2px #000;
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="overlay"></div>
+    
+    <nav style="background-color: #4CAF50; padding: 10px;">
+      <a href="index.html" style="color: white; margin-right: 15px; text-decoration: none;">Home</a>
+      <a href="donate.html" style="color: white; margin-right: 15px; text-decoration: none;">Donate Food</a>
+      <a href="view-donations.html" style="color: white; margin-right: 15px; text-decoration: none;">View Donations</a>
+      <a href="auth.html" style="color: white; text-decoration: none;">Login / Signup</a>
+    </nav>
+    
+
+    <div class="content">
+      <h1>Welcome to HeartyShare</h1>
+      <p>Click below to donate surplus food:</p>
+      <a href="donate.html"><button>Go to Donation Form</button></a>
+
+      <p>Want to view existing donations?</p>
+      <a href="view-donations.html"><button>View Food Donations</button></a>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 HeartyShare. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/auth.js"></script>
+
+</body>
+</html>
+
+

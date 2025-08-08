@@ -96,7 +96,7 @@ Follow the steps below to run the **HeartShare** application on your local machi
 ## 🧑‍💻 Developed By
 
 **Nayana Deepthy**  
-[LinkedIn](https://www.linkedin.com/in/nayana-deepthy/) • [GitHub](https://github.com/nayanadeepthy/)  
+[LinkedIn](https://www.linkedin.com/in/nayana-deepthy/) • [GitHub](https://github.com/NayanaDeepthy06/)  
 B.Tech CSE, Matrusri Engineering College  
 _Actively seeking Software Engineering Internships (Summer 2026)_
 
@@ -105,7 +105,7 @@ _Actively seeking Software Engineering Internships (Summer 2026)_
 ## 📫 Feedback & Contributions
 
 Feel free to **fork**, **star**, or **contribute** via pull requests.  
-If you'd like to collaborate or provide feedback, reach out via [nayanadeepthy@gmail.com](mailto:nayanadeepthy@gmail.com).
+If you'd like to collaborate or provide feedback, reach out via [nayanadeepthyr@gmail.com](mailto:nayanadeepthyr@gmail.com).
 
 ---
 
